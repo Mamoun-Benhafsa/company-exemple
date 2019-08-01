@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Companie Name</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <script>
+    // show the given page, hide the rest
+    function show(elementID) {
+        // try to find the requested page and alert if it's not found
+        var ele = document.getElementById(elementID);
+        if (!ele) {
+            alert("no such element");
+            return;
+        }
+        // get all pages, loop through them and hide them
+        var pages = document.getElementsByClassName('page');
+        for(var i = 0; i < pages.length; i++) {
+            pages[i].style.display = 'none';
+        }
+
+        // then show the requested page
+        ele.style.display = 'block';
+    }
+    </script>
+    <div id="Main">
+    <section class="hero is-success is-fullheight">
+        <!-- head -->
+        <div class="hero-head">
+          <header class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item">
+                  <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                </a>
+                <span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+            </div>
+          </header>
+        </div>
+      
+        <!-- content -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title">
+              Title
+            </h1>
+            <h2 class="subtitle">
+              subtitle
+            </h2>
+        </div>
+      </div>
+        <!-- footer -->
+        <div class="hero-foot">
+          <nav class="tabs is-boxed is-fullwidth">
+            <div class="container">
+              <ul>
+                <li class="is-active"><a>Overview</a></li>
+                <li><a onclick="show('Page2');" href="#Page2">What We Offer</a></li>
+                <li><a onclick="show('Page3');" href="#Page3">Contact</a></li>
+                <span class="tag is-danger">
+                Mamoun Benhafsa
+                collection  
+              </span>
+              </ul>
+                </ul>
+              </ul>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      </div>
+      <div id="Page2" style="display:none;">
+        <section class="hero is-success is-fullheight">
+            <!-- head -->
+            <div class="hero-head">
+              <header class="navbar">
+                <div class="container">
+                  <div class="navbar-brand">
+                    <a class="navbar-item">
+                      <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                    </a>
+                    <span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </div>
+                </div>
+              </header>
+            </div>
+            <!-- content -->
+            <div class="hero-body">
+              <div class="container has-text-centered">
+                <h1 class="title">
+        <div class="box cta">
+            <p class="has-text-centered">
+                <span class="tag is-primary">New</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="box cta">
+            <p class="has-text-centered">
+                <span class="tag is-primary">New</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
+            </div>
+          </div>
+            <!-- footer -->
+            <div class="hero-foot">
+              <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                  <ul>
+                    <li><a onclick="show('Main');" href="#Main">Overview</a></li>
+                    <li class="is-active"><a onclick="show('Page2');" href="#Page2">What We Offer</a></li>
+                    <li><a onclick="show('Page3');" href="#Page3">Contact</a></li>
+                    <span class="tag is-danger">
+                    Mamoun Benhafsa
+                    collection
+                  </span>
+                  </ul>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </section>
+          </div>
+          <div id="Page3" style="display:none;">
+            <section class="hero is-success is-fullheight">
+                <!-- head -->
+                <div class="hero-head">
+                  <header class="navbar">
+                    <div class="container">
+                      <div class="navbar-brand">
+                        <a class="navbar-item">
+                          <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                        </a>
+                        <span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      </div>
+                    </div>
+                  </header>
+                </div>
+              
+                <!-- content -->
+                <div class="hero-body">
+                  <div class="container has-text-centered">
+                      <div class="columns">
+                      <div class="column ">
+                          <figure class="image is-4by3">
+                              <img src="https://picsum.photos/800/600/?random" alt="Description">
+                          </figure>
+                      </div>
+                      <div class="column ">
+                          <p class="">
+                              <a href="mailto:someone@example.com" target="_top" class="button is-primary is-warning is-outlined">
+                                  Mail:someone@example.com
+                              </a>
+                              <br>
+                              <br>
+                              <br>
+                              <a  href="tel:+2130646987458" class="button is-warning is-primary is-outlined  ">
+                                  telephone: +213658695089
+                              </a>
+                              <br>
+                              <br>
+                              <br>
+                              <a class="button is-primary	is-warning is-outlined">
+                                  Adresse: exemple rad of localhost 
+                              </a>
+                          </p>
+                      </div>
+                      </div>
+                      </div>
+              </div>
+                <!-- footer -->
+                <div class="hero-foot">
+                  <nav class="tabs is-boxed is-fullwidth">
+                    <div class="container">
+                      <ul>
+                        <li><a onclick="show('Main');" href="#Main">Overview</a></li>
+                        <li><a onclick="show('Page2');" href="#Page2">What We Offer</a></li>
+                        <li class="is-active"><a onclick="show('Page3');" href="#Page3">Contact</a></li>
+                        <span class="tag is-danger">
+                        Mamoun Benhafsa
+                        collection
+                      </span>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </section>
+              </div>
+  </body>
+</html>
